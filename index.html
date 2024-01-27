@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS BAĞLANTI -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+
+            <div class="front">
+                <div class="image">
+                    <img src="images/chip.png" width="30" alt="">
+                    <div class="image-right">
+                        <img src="images/brand.png" width="50" alt="">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                </div>
+                <div class="card-number-box">#### #### #### ####</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>card holder</span>
+                        <div class="card-holder-name">Full Name</div>
+                    </div>
+
+                    <div class="box">
+                        <p>expires</p>
+                        <div class="expiration">
+                            <span class="exp-month">MM</span>
+                            <span class="exp-year">YY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="stripe"></div>
+                <div class="box">
+                    <span>CVV</span>
+                    <div class="cvv-box"></div>
+                    <img src="images/brand.png" width="50" alt="">
+                </div>
+            </div>
+        </div>
+
+        <form>
+            <div class="input-box">
+                <span>card number</span>
+                <input type="number" maxlength="16" class="card-number-input" required name="cardNumber" oninput="checkMaxLength()">
+            </div>
+
+            <div class="input-box">
+                <span>card holder</span>
+                <input type="text" required maxlength="30" class="card-holder-input">
+            </div>
+
+            <div class="flexbox">
+                <div class="input-box">
+                    <span>expiration mm</span>
+                    <select name="" id="" class="month-input">
+                        <option value="" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span>expiration yy</span>
+                    <select name="" id="" class="year-input">
+                        <option value="" selected disabled>Year</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <span>CVV</span>
+                    <input type="number" maxlength="3" class="cvv-input">
+                </div>
+            </div>
+
+            <input type="submit" value="öde" class="submit-btn">
+        </form>
+    </div>
+    <!-- JS BAĞLANTI -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

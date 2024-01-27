@@ -1,0 +1,194 @@
+/* FONT AWESOME BAĞLANTI */
+@import url("https://fonts.googleapis.com/css2?family=Cute+Font&display=swap");
+/*  font-family: 'Cute Font', sans-serif;  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding-bottom: 60px;
+  /* ! uiGradients'den alındı */
+  background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0e4f55, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0e4f55, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container form {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 600px;
+  padding-top: 160px;
+  box-shadow:  0 10px 15px rgba(0, 0, 0, 0.509);
+}
+
+.container form .input-box {
+  margin-top: 20px;
+}
+
+.container form .input-box span {
+  color: #999;
+  padding-bottom: 5px;
+}
+
+.container form .input-box input,
+.container form .input-box select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.532);
+  color: #444;
+}
+
+.container form .flexbox {
+  display: flex;
+  gap: 15px;
+}
+
+.container form .flexbox .input-box {
+  flex: 1 1 150px;
+}
+
+.container form .submit-btn {
+  width: 100%;
+  background: linear-gradient(45deg, blueviolet, deeppink);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.container form .submit-btn:hover {
+  letter-spacing: 10px;
+  opacity: 0.85;
+}
+
+.container .card-container {
+  position: relative;
+  margin-bottom: -140px;
+  height: 250px;
+  width: 410px;
+}
+
+.container .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg,   #202638,  #859398);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px gray;
+  padding: 20px;
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: 0.4s transform all ease-out;
+}
+
+.container .card-container .front .image {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.container .card-container .front .image-right{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .card-container .front .image-right i{
+  transform: rotate(90deg);
+    font-size: 20px;
+    color: white;
+}
+
+.container .card-container .front .card-number-box {
+  padding: 30px;
+  font-size: 40px;
+  color: #fff;
+  font-family: 'Cute Font', sans-serif;
+}
+
+.container .card-container .front .flexbox {
+  display: flex;
+}
+
+.container .card-container .front .flexbox .box {
+  font-size: 15px;
+  color: #fff;
+}
+
+.container .card-container .front .flexbox .box:nth-child(1) {
+  margin-right: auto;
+}
+
+.container .card-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg,  #202638,  #859398);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: right;
+  box-shadow: 10px;
+  /* ! backface-visibility: hidden
+  CSS özelliği,  bir 3D dönüşüm (transform) uygulandığında bir öğenin arkasındaki 
+  yüzeyin görünürlüğünü kontrol etmek için kullanılır. 
+  Bu özellik, bir öğenin ön yüzü kullanıcının bakış açısına yönelikken, 
+  arka yüzünün görünmemesini sağlar. */
+  backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: 0.4s transform all ease-out;
+}
+
+.container .card-container .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+
+.container .card-container .front .box-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+
+.container .card-container .back .box .cvv-box {
+  height: 50px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #333;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container .card-container .back .box img {
+  margin-top: 30px;
+}
