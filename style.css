@@ -6,24 +6,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
   border: none;
-  text-decoration: none;
   text-transform: uppercase;
   font-family: sans-serif;
 }
 
 .container {
   min-height: 100vh;
-  background-color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-  padding-bottom: 60px;
   /* ! uiGradients'den alındı */
-  background: #360033;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0e4f55, #360033);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #0e4f55, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -191,4 +185,5 @@ background: linear-gradient(to right, #0e4f55, #360033); /* W3C, IE 10+/ Edge, F
 
 .container .card-container .back .box img {
   margin-top: 30px;
+  margin-top: 10px;
 }
