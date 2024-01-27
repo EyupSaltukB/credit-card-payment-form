@@ -6,11 +6,6 @@ const cardNo = document.querySelector(".card-number-input")
     document.querySelector(".card-number-input").value;
 }
 
-let currentLength = 16;
-cardNo.addEventListener("input", () => {
-    currentLength = cardNo.value.length;
-})
-
 /* kart sahibinin adını karta yazdırma */
 const cardHolder = document.querySelector(".card-holder-input")
     cardHolder.oninput = () => {
